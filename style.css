@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #fdf6f0;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+h1 {
+    text-align: center;
+    padding: 25px;
+    color: #6b4f4f;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: #fff;
+    background: #d98c8c;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background: #c06c6c;
+    transform: scale(1.05);
+}
+
+/* ===== PRODUCT GRID ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #5a3e3e;
+}
+
+.card p {
+    font-weight: bold;
+    color: #b56576;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background: #ffafcc;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #ff8fab;
+    transform: scale(1.05);
+}
+
+/* ===== CART BOX ===== */
+.cart-box {
+    width: 60%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== CART ITEMS ===== */
+.cart-item {
+    background: #fff0f3;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+/* ===== TOTAL TEXT ===== */
+h2 {
+    text-align: center;
+    color: #6b4f4f;
+}
+
+/* ===== CHECKOUT BUTTON ===== */
+.checkout-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background: #90dbf4;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.checkout-btn:hover {
+    background: #5ec2e6;
+    transform: scale(1.05);
+}
